@@ -12,6 +12,9 @@ try {
   assert.ok(verbs.length > 0, "verbs.json should be non-empty");
   assert.deepEqual(MODES, ["append", "replace"]);
 
+  // 0. no duplicate verbs — the README promises CI catches these
+  assert.equal(new Set(verbs).size, verbs.length, "verbs.json contains a duplicate verb");
+
   // 1. fresh file, replace
   const p1 = join(dir, "a.json");
   applyVerbs({ settingsPath: p1, mode: "replace", verbs });
@@ -40,6 +43,27 @@ try {
   // 4. bad mode rejected
   assert.throws(() => applyVerbs({ settingsPath: join(dir, "d.json"), mode: "nope", verbs }));
 
+  // 4b. valid JSON that is not an object (array/null/string) is refused untouched —
+  // stringify would silently drop spinnerVerbs assigned onto an array
+  for (const bad of ["[]", "null", '"text"', "5"]) {
+    const p = join(dir, `nonobj-${Buffer.from(bad).toString("hex")}.json`);
+    writeFileSync(p, bad);
+    assert.throws(
+      () => applyVerbs({ settingsPath: p, mode: "replace", verbs }),
+      (e) => e.code === "EBADJSON",
+      `non-object settings ${bad} must be rejected as EBADJSON`
+    );
+    assert.equal(readFileSync(p, "utf8"), bad, `non-object settings ${bad} must be untouched`);
+  }
+
+  // 4c. UTF-8 BOM (common on Windows) is tolerated, existing keys survive
+  const pBom = join(dir, "bom.json");
+  writeFileSync(pBom, "\uFEFF" + JSON.stringify({ model: "opus" }));
+  applyVerbs({ settingsPath: pBom, mode: "replace", verbs });
+  const sBom = JSON.parse(readFileSync(pBom, "utf8"));
+  assert.equal(sBom.model, "opus", "keys behind a BOM must survive the merge");
+  assert.equal(sBom.spinnerVerbs.verbs.length, verbs.length);
+
   // 5. feminine list mirrors verbs.json 1:1 and is actually feminine (ends in ת or ה)
   const fem = JSON.parse(readFileSync(new URL("../verbs.fem.json", import.meta.url)));
   assert.equal(
@@ -51,6 +75,12 @@ try {
     fem.every((w) => /[תה]$/.test(w)),
     "feminine forms should end in ת or ה"
   );
+  assert.equal(new Set(fem).size, fem.length, "verbs.fem.json contains a duplicate verb");
+
+  // 6. package.json and .claude-plugin/plugin.json versions stay in sync
+  const pkg = JSON.parse(readFileSync(new URL("../package.json", import.meta.url)));
+  const plugin = JSON.parse(readFileSync(new URL("../.claude-plugin/plugin.json", import.meta.url)));
+  assert.equal(plugin.version, pkg.version, "plugin.json version must match package.json");
 
   console.log("✓ all smoke tests passed");
 } finally {
