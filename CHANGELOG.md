@@ -7,7 +7,9 @@ follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [1.0.0]
 
 ### Added
-- 183 funny Hebrew spinner verbs in [`verbs.json`](./verbs.json).
+- 231 funny Hebrew spinner verbs in [`verbs.json`](./verbs.json) — dev/AI
+  loanwords (מברווז, מראגג, מווייבב, מרבייס…) alongside Hebrew slang
+  (מתפקשש, מסתלבט, מפשפש…).
 - Community `.github` issue template for suggesting verbs, a Credits section,
   and a `docs/RECORDING.md` demo-recording guide.
 - `PROMPT.md`: a self-contained brief that lets a local Claude Code rebuild the
