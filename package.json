@@ -1,7 +1,7 @@
 {
   "name": "claude-medarbek",
-  "version": "1.0.0",
-  "description": "Replace Claude Code's thinking-spinner verbs with funny Hebrew ones (מדרבק, מכווצץ, מסנטז, מפבלש).",
+  "version": "1.0.1",
+  "description": "Replace Claude Code's thinking-spinner verbs with Hebrew ones (מדרבק, מכווצץ, מסנטז, מפבלש).",
   "type": "module",
   "bin": {
     "claude-medarbek": "bin/cli.mjs"

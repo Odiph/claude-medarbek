@@ -1,12 +1,17 @@
 {
   "name": "claude-medarbek",
-  "version": "1.0.0",
-  "description": "Funny Hebrew verbs for Claude Code's thinking spinner (מדרבק, מכווצץ, מסנטז, מפבלש).",
+  "version": "1.0.1",
+  "description": "Hebrew verbs for Claude Code's thinking spinner (מדרבק, מכווצץ, מסנטז, מפבלש).",
   "author": {
     "name": "Odiph"
   },
   "homepage": "https://github.com/Odiph/claude-medarbek",
   "repository": "https://github.com/Odiph/claude-medarbek",
   "license": "MIT",
-  "keywords": ["hebrew", "spinner", "fun", "spinnerVerbs"]
+  "keywords": [
+    "hebrew",
+    "spinner",
+    "fun",
+    "spinnerVerbs"
+  ]
 }
