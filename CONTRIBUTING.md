@@ -23,7 +23,7 @@ npm test                                     # smoke test
 ## Pull requests
 
 - One theme per PR when possible (e.g. "dev verbs", "kitchen verbs").
-- Describe what you added and why it's funny — a one-liner is fine.
+- Describe what you added and the joke behind it — a one-liner is fine.
 - Make sure `npm test` passes.
 
 By contributing you agree that your contributions are licensed under the

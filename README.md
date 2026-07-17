@@ -1,6 +1,6 @@
 # claude-medarbek 🌀
 
-> Make Claude Code think in **funny Hebrew**. Instead of _Thinking…_ you get
+> Make Claude Code think in **Hebrew**. Instead of _Thinking…_ you get
 > **מדרבק… · מהלוצינט… · מכווצץ… · שולק…**
 
 [![CI](https://github.com/Odiph/claude-medarbek/actions/workflows/ci.yml/badge.svg)](https://github.com/Odiph/claude-medarbek/actions/workflows/ci.yml)
@@ -85,7 +85,7 @@ lockstep, and CI checks it):
 - Nothing offensive or aimed at a person or group.
 - Not already in the list (CI will tell you).
 
-New here? Open-source contributions don't get gentler than "add a funny word."
+New here? Open-source contributions don't get gentler than "add a word."
 See [CONTRIBUTING.md](./CONTRIBUTING.md). First PR? We'd love it to be this one. 💛
 
 ## Credits
@@ -103,7 +103,7 @@ yourself to the list.
 
 ## עברית
 
-הופכים את פעלי ה"חשיבה" של **Claude Code** לעברית מצחיקה. במקום _Thinking…_
+הופכים את פעלי ה"חשיבה" של **Claude Code** לעברית. במקום _Thinking…_
 מקבלים **מדרבק… · מהלוצינט… · מכווצץ… · שולק…** — יותר מ-**280 פעלים**, לכל אחד
 צורת זכר ונקבה. חלקם מילים אמיתיות, חלקם מילים לועזיות מעוותות באהבה, כולם מטופשים.
 
@@ -125,14 +125,14 @@ npx claude-medarbek --print    # רק להדפיס את ה-JSON
 
 ### 🎉 תוסיפו פועל (כן, אתם)
 
-**ה-repo הזה חי על טיפשות קהילתית.** חשבתם על פועל מצחיק יותר? הוא שייך לכאן.
+**ה-repo הזה חי על יצירתיות קהילתית.** חשבתם על פועל טוב יותר? הוא שייך לכאן.
 ברצינות — תרומות של מילה אחת הן הכי טובות.
 
 - **הכי קל:** פתחו [**issue של הצעת פועל**](https://github.com/Odiph/claude-medarbek/issues/new/choose).
 - **או PR** — הוסיפו את הפועל ל-**שלושה קבצים, באותו מיקום**: `verbs.json` (זכר),
   `verbs.fem.json` (נקבה), ו-`settings.json` (זהה ל-verbs.json). ה-CI בודק סנכרון.
 
-**כללים קצרים:** הווה, בדרך כלל מתחיל ב-מ׳; כמה שיותר מומצא ומצחיק; בלי פוגעני;
+**כללים קצרים:** הווה, בדרך כלל מתחיל ב-מ׳; כמה שיותר מומצא ושנון; בלי פוגעני;
 לא כפול. PR ראשון בחיים? שיהיה זה. 💛
 
 ### קרדיטים

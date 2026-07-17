@@ -4,10 +4,16 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project aims to
 follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1]
+
+### Changed
+- Reworded package, plugin, and repo descriptions ("funny Hebrew verbs" →
+  "Hebrew verbs"). No functional changes.
+
 ## [1.0.0]
 
 ### Added
-- 287 funny Hebrew spinner verbs in [`verbs.json`](./verbs.json) — dev/AI
+- 287 Hebrew spinner verbs in [`verbs.json`](./verbs.json) — dev/AI
   loanwords (מברווז, מראגג, מווייבב, מרבייס…) alongside Hebrew slang and
   group-chat originals (מתפקשש, מסתלבט, מדרדס, מצ'קמק…).
 - Community `.github` issue template for suggesting verbs, a Credits section,

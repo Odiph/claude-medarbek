@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// claude-medarbek — funny Hebrew verbs for Claude Code's thinking spinner.
+// claude-medarbek — Hebrew verbs for Claude Code's thinking spinner.
 import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -70,7 +70,7 @@ try {
 }
 
 function printHelp() {
-  console.log(`claude-medarbek — funny Hebrew verbs for Claude Code's thinking spinner
+  console.log(`claude-medarbek — Hebrew verbs for Claude Code's thinking spinner
 
 Usage:
   npx claude-medarbek [options]

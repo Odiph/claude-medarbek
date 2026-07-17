@@ -1,5 +1,5 @@
 name: "🌀 Suggest a verb / הצעת פועל"
-description: Suggest a funny Hebrew verb for the spinner
+description: Suggest a Hebrew verb for the spinner
 title: "verbs: add …"
 labels: ["new-verb"]
 body:
