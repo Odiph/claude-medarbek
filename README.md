@@ -28,7 +28,7 @@ real words, some are lovingly mangled loanwords, all are ridiculous.
 | **מזמבר** | bamboozling |
 | **מתמזגן** | air-conditioning itself, apparently |
 
-…and **220+ more**, each with a feminine form. The full list lives in
+…and **270+ more**, each with a feminine form. The full list lives in
 [`verbs.json`](./verbs.json) — but honestly, the fun is being surprised by them
 live. 🎲
 
@@ -97,7 +97,7 @@ yourself to the list.
 ## עברית
 
 הופכים את פעלי ה"חשיבה" של **Claude Code** לעברית מצחיקה. במקום _Thinking…_
-מקבלים **מדרבק… · מהלוצינט… · מכווצץ… · שולק…** — יותר מ-**230 פעלים**, לכל אחד
+מקבלים **מדרבק… · מהלוצינט… · מכווצץ… · שולק…** — יותר מ-**280 פעלים**, לכל אחד
 צורת זכר ונקבה. חלקם מילים אמיתיות, חלקם מילים לועזיות מעוותות באהבה, כולם מטופשים.
 
 ### התקנה מהירה
