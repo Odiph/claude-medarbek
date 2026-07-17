@@ -1,0 +1,7 @@
+node_modules/
+npm-debug.log*
+.DS_Store
+*.tgz
+.claude/settings.local.json
+# artifacts created by local test runs of the CLI
+/tmp-test/

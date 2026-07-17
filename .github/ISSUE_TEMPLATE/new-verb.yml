@@ -1,0 +1,45 @@
+name: "🌀 Suggest a verb / הצעת פועל"
+description: Suggest a funny Hebrew verb for the spinner
+title: "verbs: add …"
+labels: ["new-verb"]
+body:
+  - type: textarea
+    id: verbs
+    attributes:
+      label: The verb(s) / הפועל
+      description: One per line. Present-tense, usually starting with מ־. The sillier the better. / אחד בכל שורה, בהווה, בדרך כלל מתחיל ב־מ׳.
+      placeholder: |
+        מדרבק
+        מכווצץ
+    validations:
+      required: true
+  - type: input
+    id: meaning
+    attributes:
+      label: Meaning / origin (optional) / משמעות או מקור
+      description: Where does it come from? A pun? A loanword? / מאיפה זה בא — מצלול, מילה לועזית, בדיחה פנימית?
+      placeholder: "מלשון מזגן"
+  - type: dropdown
+    id: gender
+    attributes:
+      label: Feminine form
+      description: Should we add a feminine form too? / להוסיף גם צורת נקבה?
+      options:
+        - "Yes — I'll suggest it below / כן"
+        - "Just add the masculine / רק זכר"
+    validations:
+      required: false
+  - type: input
+    id: feminine
+    attributes:
+      label: Feminine form (optional) / צורת נקבה
+      placeholder: "מתמזגנת"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: It's not offensive and doesn't target a person or group / לא פוגעני
+          required: true
+        - label: I checked it isn't already in verbs.json / בדקתי שזה עוד לא ברשימה
+          required: false
