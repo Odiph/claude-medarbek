@@ -56,6 +56,13 @@ settings, and refusing to run if the file is invalid JSON.
 { "spinnerVerbs": { "mode": "replace", "verbs": ["מדרבק", "מהלוצינט"] } }
 ```
 
+### Why does it still say "Brewed for 36s" at the end?
+
+The end-of-turn line ("Baked / Brewed / Cogitated for Ns") comes from a list
+hardcoded inside Claude Code — there's no setting for it yet, in any language.
+If you'd like a **שלק for 36s** to close the loop, go 👍 the feature request:
+[anthropics/claude-code#52420](https://github.com/anthropics/claude-code/issues/52420).
+
 ---
 
 ## 🎉 Add a verb (yes, you)
@@ -111,6 +118,10 @@ npx claude-medarbek --print    # רק להדפיס את ה-JSON
 
 אחר כך פתחו סשן חדש של Claude Code ותראו את הספינר. 🌀
 (בלי Node? שכפלו והריצו `./install.sh`, או העתיקו ידנית מ-[`settings.json`](./settings.json).)
+
+**למה בסוף עדיין כתוב "Brewed for 36s"?** שורת הסיום מגיעה מרשימה שצרובה
+בתוך Claude Code ואין לה עדיין הגדרה — בשום שפה. רוצים "שלק for 36s"? תעשו
+👍 לבקשת הפיצ'ר: [anthropics/claude-code#52420](https://github.com/anthropics/claude-code/issues/52420).
 
 ### 🎉 תוסיפו פועל (כן, אתם)
 
