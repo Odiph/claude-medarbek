@@ -13,6 +13,8 @@ real words, some are lovingly mangled loanwords, all are ridiculous.
 
 *[עברית ↓](#עברית)*
 
+![Hebrew spinner verbs in action](./docs/demo.gif)
+
 ---
 
 ## A taste 😋
