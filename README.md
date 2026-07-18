@@ -23,7 +23,7 @@ real words, some are lovingly mangled loanwords, all are ridiculous.
 | --- | --- |
 | **מדרבק** | playing the darbuka (דרבוקה) — yes, that's a real word |
 | **מהלוצינט** | hallucinating — the AI classic |
-| **מקמיט** | committing (to the bit) |
+| **מקמיט** | doing a `git commit` |
 | **מג'נרט** | generating |
 | **מתפלסף** | philosophizing instead of answering |
 | **שולק** | boiling — thinking so hard it's cooking |
