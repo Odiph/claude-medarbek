@@ -21,7 +21,7 @@ real words, some are lovingly mangled loanwords, all are ridiculous.
 
 | Verb | The joke |
 | --- | --- |
-| **מדרבק** | playing the darbuka (דרבוקה) — while "de-bugging", Hebrew-style |
+| **מדרבק** | playing the darbuka (דרבוקה) — yes, that's a real word |
 | **מהלוצינט** | hallucinating — the AI classic |
 | **מקמיט** | committing (to the bit) |
 | **מג'נרט** | generating |
