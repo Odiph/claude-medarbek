@@ -1,8 +1,12 @@
 name: Publish to npm
 
-# Runs when you publish a GitHub Release. Create a release whose tag matches
-# the package.json version (e.g. v1.1.0) and this will publish it to npm.
+# Publishes to npm either way:
+#   - push a version tag like v1.1.0 (git tag v1.1.0 && git push origin v1.1.0), or
+#   - publish a GitHub Release whose tag matches the package.json version.
 on:
+  push:
+    tags:
+      - "v*.*.*"
   release:
     types: [published]
 
