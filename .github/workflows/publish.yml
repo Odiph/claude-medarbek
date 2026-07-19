@@ -1,18 +1,23 @@
 name: Publish to npm
 
-# Publishes to npm either way:
-#   - push a version tag like v1.1.0 (git tag v1.1.0 && git push origin v1.1.0), or
-#   - publish a GitHub Release whose tag matches the package.json version.
+# Publishes to npm via GitHub OIDC "trusted publishing" — no token or secret.
+# One-time setup: npmjs.com -> the claude-medarbek package -> Settings ->
+# Trusted Publisher -> GitHub Actions (owner: Odiph, repo: claude-medarbek,
+# workflow: publish.yml). npm then trusts runs from this workflow directly.
+#
+# Triggers: a published GitHub Release, a pushed v*.*.* tag, or a manual run
+# from the Actions tab. All publish whatever version is in package.json.
 on:
   push:
     tags:
       - "v*.*.*"
   release:
     types: [published]
+  workflow_dispatch:
 
 permissions:
   contents: read
-  id-token: write # enables npm provenance (verified build attestation)
+  id-token: write # required for trusted publishing (OIDC) + provenance
 
 jobs:
   publish:
@@ -25,10 +30,11 @@ jobs:
           node-version: "22"
           registry-url: "https://registry.npmjs.org"
 
+      - name: Upgrade npm (trusted publishing needs npm >= 11.5.1)
+        run: npm install -g npm@latest
+
       - name: Run tests before publishing
         run: npm test
 
       - name: Publish to npm
-        run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public
