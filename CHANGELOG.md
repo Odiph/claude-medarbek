@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project aims to
 follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0]
+
+### Added
+- `--reverse` flag: pre-reverses each verb (grapheme-aware) for terminals
+  without bidirectional-text support (kitty, Alacritty, Ghostty…) that would
+  otherwise draw Hebrew backwards. Documented in the README as a cosmetic
+  workaround; the shipped verb lists stay canonical.
+- New verbs, bringing the list to 291 (with matching feminine forms): `מקסטם`
+  (customizing), `מג'נגל` (juggling), `מרטרב` (retrieving), and `מפאר`
+  (opening a PR).
+
+### Changed
+- Publish to npm automatically via GitHub Actions on a published Release or a
+  pushed `v*.*.*` tag, with npm provenance.
+
 ## [1.0.2]
 
 ### Added
