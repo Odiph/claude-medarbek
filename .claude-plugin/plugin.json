@@ -1,6 +1,6 @@
 {
   "name": "claude-medarbek",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Hebrew verbs for Claude Code's thinking spinner (מדרבק, מכווצץ, מסנטז, מפבלש).",
   "author": {
     "name": "Odiph"
