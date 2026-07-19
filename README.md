@@ -40,10 +40,29 @@ live. 🎲
 npx claude-medarbek            # global  (~/.claude/settings.json)
 npx claude-medarbek --project  # this project only
 npx claude-medarbek --feminine # feminine forms
+npx claude-medarbek --reverse  # for terminals that render Hebrew backwards
 npx claude-medarbek --print    # just show the JSON, write nothing
 ```
 
 Then open a **new** Claude Code session and watch the spinner. 🌀
+
+### Seeing the verbs reversed? (kitty, Alacritty, Ghostty…)
+
+Some terminals don't implement the Unicode bidirectional algorithm, so they draw
+Hebrew left-to-right and it reads backwards (`מדרבק` shows up as `קברדמ`). The
+verbs are stored correctly — it's the terminal.
+
+The real fix is a BiDi-aware terminal (e.g. **iTerm2 3.5+**). If you want to stay
+in your current terminal, add `--reverse`: it pre-reverses each verb so a
+left-to-right terminal draws it in correct reading order.
+
+```bash
+npx claude-medarbek --reverse
+```
+
+It's a cosmetic hack — the stored strings are genuinely backwards, so copied text
+comes out reversed, and a BiDi-aware terminal would then show them reversed. Use
+it only if you're staying on a non-BiDi terminal.
 
 <sub>No Node? Clone the repo and run `./install.sh`, or paste the block from
 [`settings.json`](./settings.json) into your settings by hand.</sub>
@@ -115,11 +134,20 @@ yourself to the list.
 npx claude-medarbek            # גלובלי (~/.claude/settings.json)
 npx claude-medarbek --project  # רק לפרויקט הנוכחי
 npx claude-medarbek --feminine # צורות נקבה
+npx claude-medarbek --reverse  # לטרמינלים שמציגים עברית הפוך
 npx claude-medarbek --print    # רק להדפיס את ה-JSON
 ```
 
 אחר כך פתחו סשן חדש של Claude Code ותראו את הספינר. 🌀
 (בלי Node? שכפלו והריצו `./install.sh`, או העתיקו ידנית מ-[`settings.json`](./settings.json).)
+
+**רואים את הפעלים הפוך? (kitty, Alacritty, Ghostty…)** חלק מהטרמינלים לא
+מיישמים את אלגוריתם הכיווניות (BiDi) של יוניקוד ומציירים עברית משמאל לימין, אז
+היא נקראת הפוך (`מדרבק` מופיע כ-`קברדמ`). הפעלים שמורים נכון — זה הטרמינל.
+הפתרון האמיתי הוא טרמינל שתומך ב-BiDi (למשל **iTerm2 3.5+**). רוצים להישאר
+בטרמינל הנוכחי? הוסיפו `--reverse` — זה הופך מראש כל פועל כך שטרמינל שמצייר
+משמאל לימין יציג אותו בסדר קריאה נכון. זה טריק ויזואלי בלבד: המחרוזות השמורות
+באמת הפוכות, אז טקסט מועתק יֵצא הפוך, וטרמינל תומך-BiDi יציג אותן הפוך.
 
 **למה בסוף עדיין כתוב "Brewed for 36s"?** שורת הסיום מגיעה מרשימה שצרובה
 בתוך Claude Code ואין לה עדיין הגדרה — בשום שפה. רוצים "שלק for 36s"? תעשו

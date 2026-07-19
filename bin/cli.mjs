@@ -4,13 +4,13 @@ import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { homedir } from "node:os";
-import { applyVerbs } from "../lib/apply.mjs";
+import { applyVerbs, reverseVerb } from "../lib/apply.mjs";
 
 const pkgRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const KNOWN_FLAGS = new Set([
   "--global", "--project", "--append", "--replace",
-  "--feminine", "--fem", "--print", "-h", "--help",
+  "--feminine", "--fem", "--reverse", "--print", "-h", "--help",
 ]);
 
 const args = process.argv.slice(2);
@@ -41,7 +41,13 @@ if (has("--global") && has("--project")) {
 }
 
 const verbsFile = has("--feminine", "--fem") ? "verbs.fem.json" : "verbs.json";
-const verbs = JSON.parse(readFileSync(join(pkgRoot, verbsFile), "utf8"));
+const canonicalVerbs = JSON.parse(readFileSync(join(pkgRoot, verbsFile), "utf8"));
+
+// --reverse: pre-reverse each verb for terminals without bidirectional-text
+// support (kitty, Alacritty, Ghostty, …) that would otherwise draw Hebrew
+// backwards. The shipped verbs.json stays canonical — only what we write out
+// is reversed.
+const verbs = has("--reverse") ? canonicalVerbs.map(reverseVerb) : canonicalVerbs;
 
 const mode = has("--append") ? "append" : "replace";
 
@@ -81,6 +87,8 @@ Options:
   --append    Add to Claude's built-in verbs
   --replace   Use only these Hebrew verbs         (default)
   --feminine  Use the feminine forms (verbs.fem.json, Hebrew-origin verbs)
+  --reverse   Reverse each verb for terminals without bidirectional-text
+              support (kitty, Alacritty, Ghostty) that draw Hebrew backwards
   --print     Print the spinnerVerbs JSON block and exit (writes nothing)
   -h, --help  Show this help
 

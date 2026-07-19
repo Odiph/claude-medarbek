@@ -3,7 +3,7 @@ import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import assert from "node:assert/strict";
-import { applyVerbs, MODES } from "../lib/apply.mjs";
+import { applyVerbs, MODES, reverseVerb } from "../lib/apply.mjs";
 
 const verbs = JSON.parse(readFileSync(new URL("../verbs.json", import.meta.url)));
 const dir = mkdtempSync(join(tmpdir(), "hsv-"));
@@ -81,6 +81,16 @@ try {
   const pkg = JSON.parse(readFileSync(new URL("../package.json", import.meta.url)));
   const plugin = JSON.parse(readFileSync(new URL("../.claude-plugin/plugin.json", import.meta.url)));
   assert.equal(plugin.version, pkg.version, "plugin.json version must match package.json");
+
+  // 7. reverseVerb flips grapheme order and is its own inverse, so no verb
+  //    is lost or duplicated when --reverse is applied to the whole list
+  assert.equal(reverseVerb("מדרבק"), "קברדמ", "reverseVerb should flip grapheme order");
+  assert.ok(
+    verbs.every((w) => reverseVerb(reverseVerb(w)) === w),
+    "reverseVerb must round-trip (reversing twice restores the original)"
+  );
+  const reversed = verbs.map(reverseVerb);
+  assert.equal(new Set(reversed).size, verbs.length, "reversing must not collapse verbs into duplicates");
 
   console.log("✓ all smoke tests passed");
 } finally {
