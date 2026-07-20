@@ -11,6 +11,7 @@ Prep materials for the **Thursday 4 PM whiteboard session**. Source: Odi / Tejas
 | 00 | [Whiteboard Session Agenda](./00-whiteboard-agenda.md) | Minute-by-minute plan for Thursday | Odi |
 | 01 | [Problem Definition & Use-Case Selection Pathway](./01-problem-definition-pathway.md) | The framework we'll fill in live (OST-based) | Odi |
 | 02 | [First Steps & Homework](./02-homework.md) | What Tejas, Jason, and Odi each do before/after Thursday | All |
+| 03 | [Discovery Kit](./03-discovery-kit.md) | Interview guide + mini-lesson + evidence log — how to bring real problem evidence | Odi (ship first) |
 
 ## Operating principles (agreed Jul 16)
 
