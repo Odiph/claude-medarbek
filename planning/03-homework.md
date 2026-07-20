@@ -13,6 +13,8 @@ Before talking to anyone, write down what *you* hate about group collaboration. 
 
 > Dump 10–15 between you. These are the first data points — we've lived this problem.
 
+**Also list the flip side — signs of a *good* group project.** When a group effort went well, what was true? (clear goal, clear ownership, visible status, easy to contribute, decisions stuck, follow-through, everyone engaged, momentum.) The issue is the gap between these and the hates.
+
 ## Part 2 — Validate against real people
 - **3 conversations** with people who run group efforts (HOA/community first, since it's the leading context). Not a pitch — "walk me through the last time coordinating [the group] was a pain." Capture **verbatim quotes**: what broke, how often, what it cost, what they do about it.
 - **Which of our hates do they share?** Mark the frictions that show up for others too — those are the real ones.
