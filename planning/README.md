@@ -1,27 +1,31 @@
-# Product Strategy — MVP Planning Pack
+# MVP Planning — Two Goals
 
-Prep materials for the **Thursday 4 PM whiteboard session**. Source: Odi / Tejas / Jason sync, Jul 16, 2026.
+Prep for the **Thursday 4 PM whiteboard session**. We leave with exactly two things decided:
 
-**Goal of the session:** finalize the *one* problem we're solving and the *one* use case we're testing first — then leave with a testable set of assumptions, not a build plan.
+1. **The issue** — the one problem space we're committing to.
+2. **A use case within the issue** — the one concrete situation we'll build and test first.
+
+Everything else (features, revenue model, roadmap) waits until these two are locked.
+
+## The distinction that makes this work
+
+| | **Issue** | **Use case** |
+|---|-----------|--------------|
+| What | The broad, enduring pain a group has | One specific situation where we do one job for one person |
+| Scope | Big enough to be a company | Small enough to build and test by December |
+| Example | "HOA communities can't coordinate or engage their members" | "A board member collects RSVPs and runs live widgets at one community event" |
+| How many | We pick **one** | One issue contains many; we pick **one to prove first** |
+
+**One issue → many possible use cases → we commit to one use case first.** Prove it, hit revenue, *then* reach for the next use case in the same issue.
 
 ## Contents
 
-| # | Doc | Purpose | Owner |
-|---|-----|---------|-------|
-| 00 | [Whiteboard Session Agenda](./00-whiteboard-agenda.md) | Minute-by-minute plan for Thursday | Odi |
-| 01 | [Problem Definition & Use-Case Selection Pathway](./01-problem-definition-pathway.md) | The framework we'll fill in live (OST-based) | Odi |
-| 02 | [First Steps & Homework](./02-homework.md) | What Tejas, Jason, and Odi each do before/after Thursday | All |
-| 03 | [Discovery Kit](./03-discovery-kit.md) | Interview guide + mini-lesson + evidence log — how to bring real problem evidence | Odi (ship first) |
+| # | Doc | Decides |
+|---|-----|---------|
+| 01 | [Define the Issue](./01-define-the-issue.md) | Which problem space, stated so it's real and ours |
+| 02 | [Decide the Use Case](./02-decide-the-use-case.md) | Which single use case inside that issue we test first |
 
-## Operating principles (agreed Jul 16)
-
-1. **Test-first.** No build without a written problem statement and a validated assumption behind it.
-2. **Reduce unknowns, don't scale.** Small, data-backed validation over full-scale development.
-3. **One battle at a time.** Limit scope. Commit to **$100k revenue** before evaluating new use cases or pivoting.
-4. **Product narrative ≠ investor pitch.** Keep them separate; don't let the deck drive the discovery.
-
-## Roles
-
-- **Tejas / Jason** — founders. Own GTM, investor narrative, customer access.
-- **Odi** — fractional consultant. Owns discovery method, framework, facilitation.
-- **MVP phase target:** December. Equity is phase-based, tied to team goals.
+## Guardrails (agreed Jul 16)
+- **Test-first** — no build without a written problem and a validated assumption.
+- **One battle** — commit to **$100k revenue** before adding a second use case or changing the issue.
+- **Narrative ≠ pitch** — keep product discovery separate from the investor story.
