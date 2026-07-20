@@ -7,6 +7,8 @@ Prep for the **Thursday 4 PM whiteboard session**. We leave with exactly two thi
 
 Everything else (features, revenue model, roadmap) waits until these two are locked.
 
+**Where the issue comes from:** we start from a pain we can feel — **what people hate about group collaboration** — and find where it bites hardest. HOA is a candidate *context*, not the starting point.
+
 ## The distinction that makes this work
 
 | | **Issue** | **Use case** |
