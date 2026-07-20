@@ -1,30 +1,40 @@
 # Homework — Before Thursday
 
-Tejas and Jason do this **together**. It feeds both goals so the session is a decision, not a brainstorm. **Talk to real people before Thursday** — a few conversations beat an hour of opinion.
+Tejas and Jason do this **together**. The base of problem definition is **what we hate about group collaboration** — so the homework starts with your own experience, then validates it against real people.
 
 ---
 
-## For Goal 1 — is the issue real?
-- **3 discovery conversations** with HOA/community people. Not a pitch — "walk me through the last time [running the community] was a pain." Capture **verbatim quotes**: what hurt, how often, what it cost, what they do about it today.
-- **Reachability check:** list who you can actually get on a call this week. If you can't line up ~5, that itself answers the issue's "Real" test.
-- **Existing signal + current spend:** pull anything you already have — waitlist, past conversations, inbound — and note what people **pay for today**. Current spend is the hardest evidence the issue is real and costly.
+## Part 1 — Mine our own frustration (start here)
+Before talking to anyone, write down what *you* hate about group collaboration. Raw and specific — real moments, not categories.
 
-## For Goal 2 — which use case?
-- From those conversations, list the **specific situations** where the pain showed up ("collecting dues," "getting people to the event").
-- Turn 3–4 of them into candidate use cases, each as **one actor / one job / one trigger** (not "engage members" — too broad).
+- The last few times getting a group to coordinate/decide/follow through was painful — what exactly broke?
+- Where does it always fall apart: deciding, chasing people, losing track, no follow-through, unclear ownership?
+- What makes you dread organizing or joining a group effort?
+
+> Dump 10–15 between you. These are the first data points — we've lived this problem.
+
+## Part 2 — Validate against real people
+- **3 conversations** with people who run group efforts (HOA/community first, since it's the leading context). Not a pitch — "walk me through the last time coordinating [the group] was a pain." Capture **verbatim quotes**: what broke, how often, what it cost, what they do about it.
+- **Which of our hates do they share?** Mark the frictions that show up for others too — those are the real ones.
+- **Reachability + spend:** who can we get on a call this week, and what do they already pay for or hack around? Current spend = hardest evidence the friction is real and costly.
+
+## Part 3 — Point it at a context
+- Where does the sharpest friction bite hardest? List the **specific situations** it showed up in (collecting dues, getting people to the event, making a group decision).
+- Turn 3–4 into candidate use cases, each as **one actor / one job / one trigger**.
 
 ---
 
 ## Bring, written down
-1. **The issue**, one sentence: *"[customer] repeatedly struggles to [job] because [friction], which costs them [x]."*
-2. **Top 3–4 candidate use cases**, each: *"when [actor] hits [trigger], they need [job]."*
+1. **Our list of collaboration frictions** (Part 1 + which ones Part 2 confirmed).
+2. **The issue**, one sentence: *"[group] repeatedly struggles to [coordinate on job] because [friction], which costs them [x]."*
+3. **Top 3–4 candidate use cases** inside it.
 
 ---
 
 ## What "done" looks like
-- [ ] 3 real conversations, captured as quotes not summaries
-- [ ] Reachability list — or the gap named
-- [ ] Existing signal + any current spend pulled
+- [ ] 10–15 collaboration frictions written from our own experience
+- [ ] 3 real conversations, captured as quotes, marking which frictions others share
+- [ ] Reachability list + any current spend pulled
 - [ ] One written issue statement + a short list of candidate use cases
 
-> The bar: no opinion without at least one data point behind it. If nobody talked to a customer, Thursday slips to gathering data instead of deciding.
+> The bar: no opinion without a data point behind it — and here we're the first data point. If nobody validated a hate against a real person, Thursday slips to gathering data instead of deciding.
