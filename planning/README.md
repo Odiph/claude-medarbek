@@ -27,6 +27,7 @@ Everything else (features, revenue model, roadmap) waits until these two are loc
 | 01 | [Define the Issue](./01-define-the-issue.md) | Which problem space, stated so it's real and ours |
 | 02 | [Decide the Use Case](./02-decide-the-use-case.md) | Which single use case inside that issue we test first |
 | 03 | [Homework](./03-homework.md) | What Tejas and Jason bring (done together) to feed both decisions |
+| 04 | [Session Message](./04-session-message.md) | Ready-to-send note with goals, agenda, and homework |
 
 ## Guardrails (agreed Jul 16)
 - **Test-first** — no build without a written problem and a validated assumption.
