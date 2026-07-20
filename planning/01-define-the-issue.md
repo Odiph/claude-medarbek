@@ -17,6 +17,21 @@ Start with your own experience. Brainstorm the friction, raw and specific — re
 
 > Dump 10–15 of these. Specific incidents beat categories.
 
+## Step 0.5 — What does a *good* group project look like?
+The hates tell us what's broken. The signs of a healthy group effort tell us the target — and **the issue is the gap between the two.** List what's true when group collaboration actually works.
+
+Clear signs of a good group project:
+- **One shared goal** everyone can state the same way.
+- **Clear ownership** — everyone knows who's doing what, no "I thought you had it."
+- **Visible status** — anyone can see where things stand without asking.
+- **Low friction to contribute** — participating takes seconds, not a meeting.
+- **Decisions get made and stick** — no endless re-litigating.
+- **Follow-through** — things that get decided actually happen.
+- **Everyone feels it matters** — contribution is seen; people stay engaged.
+- **Momentum** — it keeps moving without one person dragging it.
+
+> For each friction in Step 0, ask: *which of these signs is missing?* That's the sharpest way to name the pain.
+
 ## Step 1 — Cluster into recurring frictions
 Group the dump into a handful of recurring frictions. Name each in plain language.
 
