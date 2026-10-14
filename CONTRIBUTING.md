@@ -28,3 +28,21 @@ npm test                                     # smoke test
 
 By contributing you agree that your contributions are licensed under the
 project's [MIT License](./LICENSE).
+
+## Releasing (maintainers)
+
+Publishing to npm is automated by
+[`.github/workflows/publish.yml`](./.github/workflows/publish.yml) using npm
+**trusted publishing (OIDC)**: no npm token or repo secret is involved. Bump
+the version in `package.json`, then publish a GitHub Release or push a
+`v*.*.*` tag (or run the workflow manually from the Actions tab).
+
+Trust is configured on npmjs.com → `claude-medarbek` → Settings → Trusted
+Publisher (owner `Odiph`, repo `claude-medarbek`, workflow `publish.yml`). If
+the workflow file is renamed, update it there too.
+
+History: the first publish setup (2026-07-19) used a granular npm token
+(`github-publish`) stored as the `NPM_TOKEN` repo secret; the workflow moved to
+trusted publishing the same day (#8). The unused `NPM_TOKEN` secret was deleted
+on 2026-10-14 and the token was left to expire on 2026-10-17. Don't add a token
+back; fix the Trusted Publisher config instead.
